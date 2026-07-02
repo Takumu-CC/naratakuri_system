@@ -1,143 +1,177 @@
-<!-- ここに HTML のコードを書きましょう。index.html というファイルの名前は変更しないでください -->
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
   <title>在室確認システム</title>
 </head>
+<body>
+  <header>
+    <h1>在庫確認システム <div id="clock"  class="clock" aria-live="polite" aria-atomic="true"></div></h1>
+   
+  </header>
 
 <body>
-  <span style="color:white">在室確認システム</span>
+ 
+<div id="clock"></div>
+ 
+<script>
 
+  // 時計を更新する関数
+
+  function updateClock() {
+
+    const now = new Date();
+
+    const h = String(now.getHours()).padStart(2, '0');
+
+    const m = String(now.getMinutes()).padStart(2, '0');
+
+    const s = String(now.getSeconds()).padStart(2, '0');
+
+    document.getElementById('clock').textContent = `${h}:${m}:${s}`;
+
+  }
+ 
+  // 1秒ごとに更新
+
+  setInterval(updateClock, 1000);
+
+  updateClock(); // 初回即時表示
+</script>
+ 
+</body>
+</html>
+
+ 
+  <!-- <div id="clock" class="clock" aria-live="polite" aria-atomic="true"></div> -->
   <div class="grades">
-
-
-
+ 
+ 
+ 
     <div class="grade">
       <h1>1年生</h1>
-        
+       
         <div class="button-wrapper">
-          
-          <button type="button" class="base-button" onclick="changeColor(this)">TL:</button>
+         
+          <button type="button" class="base-button" onclick="changeColor(this)">TL:杉浦 大輔</button>
         </div>
         <div class="button-wrapper">
-          
-          <button type="button" class="base-button" onclick="changeColor(this)">SV:</button>
+         
+          <button type="button" class="base-button" onclick="changeColor(this)">SV:大槻 明弘</button>
         </div>
         <div class="button-wrapper">
-          
-          <button type="button" class="base-button" onclick="changeColor(this)">1A:</button>
+         
+          <button type="button" class="base-button" onclick="changeColor(this)">1A:徳永 雅俊</button>
         </div>
         <div class="button-wrapper">
-          
-          <button type="button" class="base-button" onclick="changeColor(this)">1B:</button>
+         
+          <button type="button" class="base-button" onclick="changeColor(this)">1B:稲田 将樹</button>
         </div>
         <div class="button-wrapper">
-          
-          <button type="button" class="base-button" onclick="changeColor(this)">1C:</button>
+         
+          <button type="button" class="base-button" onclick="changeColor(this)">1C:山村 大樹</button>
         </div>
         <div class="button-wrapper">
-          
-          <button type="button" class="base-button" onclick="changeColor(this)">1D:</button>
+         
+          <button type="button" class="base-button" onclick="changeColor(this)">1D:山本 恵</button>
         </div>
         <div class="button-wrapper">
-          
-          <button type="button" class="base-button" onclick="changeColor(this)">寄:</button>
+         
+          <button type="button" class="base-button" onclick="changeColor(this)">寄:松井 瑠菜</button>
         </div>
-
-    
+ 
+   
     </div>
-
-
-
+ 
+ 
+ 
     <div class="grade">
       <h1>2年生</h1>
-
+ 
        <div class="button-wrapper">
-          
-          <button type="button" class="base-button" onclick="changeColor(this)">TL:</button>
+         
+          <button type="button" class="base-button" onclick="changeColor(this)">TL:榊原 剛</button>
         </div>
          <div class="button-wrapper">
-          
-          <button type="button" class="base-button" onclick="changeColor(this)">SV:</button>
+         
+          <button type="button" class="base-button" onclick="changeColor(this)">SV:宮代 勇伸</button>
         </div>
          <div class="button-wrapper">
-          
-          <button type="button" class="base-button" onclick="changeColor(this)">2A:</button>
+         
+          <button type="button" class="base-button" onclick="changeColor(this)">2A:豊田 将揮</button>
         </div>
          <div class="button-wrapper">
-          
-          <button type="button" class="base-button" onclick="changeColor(this)">2B:</button>
+         
+          <button type="button" class="base-button" onclick="changeColor(this)">2B:佐々木 陸</button>
         </div>
          <div class="button-wrapper">
-          
-          <button type="button" class="base-button" onclick="changeColor(this)">2C:</button>
+         
+          <button type="button" class="base-button" onclick="changeColor(this)">2C:西部 勇</button>
         </div>
          <div class="button-wrapper">
-          
-          <button type="button" class="base-button" onclick="changeColor(this)">2D:</button>
+         
+          <button type="button" class="base-button" onclick="changeColor(this)">2D:中野 飛鳥</button>
         </div>
          <div class="button-wrapper">
-          
-          <button type="button" class="base-button" onclick="changeColor(this)">寄:</button>
+         
+          <button type="button" class="base-button" onclick="changeColor(this)">寄:山口 郁登</button>
         </div>
-
-
-
-
+ 
+ 
+ 
+ 
     </div>
     <div class="grade">
       <h1>3年生</h1>
-
+ 
       <div class="button-wrapper">
-          
-          <button type="button" class="base-button" onclick="changeColor(this)">TL:</button>
+         
+          <button type="button" class="base-button" onclick="changeColor(this)">TL:西田 順一</button>
         </div>
          <div class="button-wrapper">
-          
-          <button type="button" class="base-button" onclick="changeColor(this)">SV:</button>
+         
+          <button type="button" class="base-button" onclick="changeColor(this)">SV:三木 良太</button>
         </div>
          <div class="button-wrapper">
-          
-          <button type="button" class="base-button" onclick="changeColor(this)">3A:</button>
+         
+          <button type="button" class="base-button" onclick="changeColor(this)">3A:柴田 翔平</button>
         </div>
          <div class="button-wrapper">
-          
-          <button type="button" class="base-button" onclick="changeColor(this)">3B:</button>
+         
+          <button type="button" class="base-button" onclick="changeColor(this)">3B:吉村 光</button>
         </div>
          <div class="button-wrapper">
-          
-          <button type="button" class="base-button" onclick="changeColor(this)">3C:</button>
+         
+          <button type="button" class="base-button" onclick="changeColor(this)">3C:若林 宏樹</button>
         </div>
          <div class="button-wrapper">
-          
-          <button type="button" class="base-button" onclick="changeColor(this)">3D:</button>
+         
+          <button type="button" class="base-button" onclick="changeColor(this)">3D:坂井 翔太</button>
         </div>
          <div class="button-wrapper">
-          
-          <button type="button" class="base-button" onclick="changeColor(this)">寄:</button>
+         
+          <button type="button" class="base-button" onclick="changeColor(this)">寄:藤家 菜々子</button>
         </div>
     </div>
-  
+ 
   </div>
-
-  
-    
-
-
-
-
-
-
-
-
-
-
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
   <script src="script.js"></script>
 </body>
-
-
+ 
+ 
 </html>
