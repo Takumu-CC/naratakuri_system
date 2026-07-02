@@ -1,0 +1,62 @@
+.grades{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+
+
+
+.grade{
+    text-align: center;
+    width: 25%;
+    border: 1px solid #999;
+    padding: 10px;
+    font-size: 20px;
+    background-color: lightseagreen ;
+    border-radius: 10px;
+    color: black;
+}
+
+
+
+
+.base-button{
+    font-size: 35px;
+    padding: 10px 20px;
+    background-color: rgb(79, 209, 68);
+    transition:  0.3s;
+    border-radius: 10px;
+    width: 65%;
+}
+
+
+
+
+.base-button.is-active{
+    background-color: red ;
+    border-radius: 10px;
+}
+
+
+
+
+body{
+    background-color: rgb(93, 184, 152);
+}
+
+
+
+
+span{
+    font-size: 50px;
+}
+
+
+
+
+/* .teacher{ 
+
+    margin: 10px 0;
+    font-size: 30px;
+ } */
